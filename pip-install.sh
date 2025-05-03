@@ -1,5 +1,3 @@
 #!/bin/bash
 
-. docker-utils/pip.sh-sourceme
-
-python -m pip install "$PIP_ARGS" "$@"
+python -m pip install --no-cache-dir --root-user-action=ignore $@
