@@ -2,4 +2,4 @@
 
 . docker-utils/pip.sh-sourceme
 
-echo python -m pip install "$PIP_ARGS" "$@"
+python -m uv pip install "$PIP_ARGS" "$@"
